@@ -16,7 +16,7 @@ config.ini
 			expiretime = 3600    #默认缓存有效期
 			updatecycle = 10000  #每访问xxx次执行更新
 
-apiConfig.json  #具体接口配置
+apiConfig.json  #具体接口配置,只有列表中的接口和参数才可被缓存
 
 		[{
 			"UrlPath": "/model/getList",   #接口地址
@@ -33,7 +33,7 @@ apiConfig.json  #具体接口配置
 			"ParamsArr": [],
 			"ExpireTime": 10,
 			"CheckCount": 50000
-		}]
+		}...]
 
 启动服务：
 	./cache /root/project/go/bin/cache_config (配置文件所在目录)
