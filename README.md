@@ -34,3 +34,6 @@ apiConfig.json  #具体接口配置
 			"ExpireTime": 10,
 			"CheckCount": 50000
 		}]
+
+启动服务：
+	./cache /root/project/go/bin/cache_config (配置文件所在目录)
