@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/views/dist/css/bootstrap.min.css">
+    <style>
+        ul {list-style-type: none;}
+        .list span{width:100px;display:inline-block;    border: 1px solid; text-align: center;}
+        .list span.mwithd{width:300px;}
+    </style>
+</head>
+<body>
+    <table class="table">
+        <tr><th>#</th><th>接口</th><th>操作</th></tr>
+        {{range $k, $v := .GroupList}}
+        <tr><td>{{$k}}</td><td>{{$v}}</td><td><a href="">更新缓存</a></td></tr>
+        {{end}}
+    </table>
+
+    <script src="/views/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
